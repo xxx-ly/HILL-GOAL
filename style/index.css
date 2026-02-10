@@ -14,7 +14,6 @@
 .flex_center{
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .flex_between{
@@ -22,6 +21,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.abous-content{
+    padding: 12px;
+}
+.aboutus-bg{background: url(../images/img03.jpg)no-repeat center center/cover;}
+.mobile-bg{background: url(../images/img02.jpg)no-repeat center center/cover;}
+.fz_14{font-size: 14px;}
 /* 分批 */
 html {
     -webkit-box-sizing: border-box;
