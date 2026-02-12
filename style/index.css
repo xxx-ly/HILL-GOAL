@@ -26,8 +26,15 @@
     padding: 12px;
 }
 .aboutus-bg{background: url(../images/img03.jpg)no-repeat center center/cover;}
-.mobile-bg{background: url(../images/img02.jpg)no-repeat center center/cover;}
+.mobile-bg,.imgbg-2{background: url(../images/img02.jpg)no-repeat center center/cover;}
 .fz_14{font-size: 14px;}
+.mb124{margin-bottom: 124px !important;}
+
+/* 遊戲開發介面 */
+.game-outstanding01{background: url(../images/img19.webp)no-repeat center center/cover;}
+.game-outstanding02{background: url(../images/img20.webp)no-repeat center center/cover;}
+.game-outstanding03{background: url(../images/img21.jpeg)no-repeat center center/cover;}
+.game-outstanding04{background: url(../images/img22.jpg)no-repeat center center/cover;}
 /* 分批 */
 html {
     -webkit-box-sizing: border-box;
