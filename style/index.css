@@ -29,6 +29,20 @@
 .mobile-bg,.imgbg-2{background: url(../images/img02.jpg)no-repeat center center/cover;}
 .fz_14{font-size: 14px;}
 .mb124{margin-bottom: 124px !important;}
+.mtb30{margin: 30px auto;}
+.mt30{margin-top: 30px;}
+.sendBtn{
+    background: #036AE5;
+    border: 0;
+    border-radius: 3px;
+    width: 100px;
+    margin-top: 20px;
+    padding: 12px 0;
+}
+.sendBtn a,.sendBtn:hover a{
+    color: #fff;
+}
+.sendBtn:hover{opacity: 0.8;}
 
 /* 遊戲開發介面 */
 .game-outstanding01{background: url(../images/img19.webp)no-repeat center center/cover;}
@@ -36,6 +50,9 @@
 .game-outstanding03{background: url(../images/img21.jpeg)no-repeat center center/cover;}
 .game-outstanding04{background: url(../images/img22.jpg)no-repeat center center/cover;}
 
+@media (max-width:1200px){
+    .aboutus_img{display: none !important;}
+}
 /* header */
 /* 基礎樣式 */
 .navbar {
@@ -26082,6 +26099,9 @@ header.ark-header .ff-font-zocial[class*=icon]:before {
     .header .mega-menu .dropup {
         position: static
     }
+.menu-all-sotatek-header-en-container ul.sotatek-header-menu>li.menu-item.menu-item-has-children>a {
+    background: url(../wp-content/uploads/2024/12/icon-down.svg) no-repeat top 50% right 10px;
+}
 
     .header .mega-menu .container {
         position: relative
@@ -38969,11 +38989,11 @@ html.pum-open.pum-open-overlay-disabled.pum-open-scrollable .pum-overlay.pum-act
 	letter-spacing: -0.5px !important;
 }
 .ffb-id-8e9gopkh .ffb-id-8p0drvdj {
-	margin-bottom: 32px;
+	margin: 30px auto;
 }
 @media (min-width:768px) {
 	.ffb-id-8e9gopkh .ffb-id-8p0drvdj {
-		margin-bottom: 64px;
+		margin: 30px;
 	}
 }
 .ffb-id-8e9gopkh .ffb-id-8e9gsqn9 {

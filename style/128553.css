@@ -110,7 +110,7 @@ Saved: Jan 29 2026 | 08:36:33 */
 }
 
 .title-38 {
-  color: var(--c-main-7) !important;
+  color: #000 !important;
   font-size: 38px;
   font-weight: 600;
   line-height: 140%;
@@ -1214,7 +1214,6 @@ ul.fg-text-dark {
   ul.sotatek-header-menu
   > li.menu-item.menu-item-has-children
   > a {
-  background: url(../2024/12/icon-down.svg) no-repeat top 50%;
   right: 10px;
   padding-right: 35px;
   position: relative;
@@ -9184,8 +9183,7 @@ div#ez-toc-container {
   .panel-title
   > a:after {
   padding: 8px;
-  background-image: url(/wp-content/uploads/2024/12/icon-chevron-down-arrow-blue.svg);
-  background-image: url(../2024/12/icon-chevron-down-arrow-blue.svg);
+  background-image: url(../wp-content/uploads/2024/12/icon-chevron-down-arrow-blue.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
