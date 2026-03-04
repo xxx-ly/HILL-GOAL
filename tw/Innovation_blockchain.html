@@ -1706,21 +1706,8 @@
                                         form.addEventListener("submit", async function (e) {
                                             e.preventDefault(); // 阻止跳轉
                                             const formData = new FormData(form);
-                                            try {
-                                            const response = await fetch('../send.php', {
-                                                method: 'POST',
-                                                body: formData
-                                            });
-
-                                            const result = await response.json();
+                                            fetch('../send.php', {method: 'POST',body: formData});
                                             location.href = "/tw/thank-contact.html"
-                                            // if (result.data) {
-                                            //   location.href = "/tw/thank-contact.html"
-                                            // }
-
-                                            } catch (error) {
-                                            console.error(error);
-                                            }
                                         });
                                         </script>
                                         <!-- ==== 表單 end ==== -->
