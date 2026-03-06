@@ -88,24 +88,41 @@ jQuery(document).ready(function () {
     }
   });
 
-  // language
-  var language_text_icon =
-    '<img src="../images/icon-language.svg">';
-  var language_text_icon = language_text_icon + currentLang;
-  jQuery(".s-language-switcher .language-active").html(language_text_icon);
+  // // language
+  // var language_text_icon =
+  //   '<img src="../images/icon-language.svg">';
+  // var language_text_icon = language_text_icon + currentLang;
+  // jQuery(".s-language-switcher .language-active").html(language_text_icon);
 
-  var $el = jQuery(".s-language-switcher .language-active");
-  var $ee = jQuery(".s-language-switcher ul");
-  $el.click(function (e) {
-    e.stopPropagation();
-    $ee.toggleClass("active");
-  });
-  jQuery(document).on("click", function (e) {
-    if (jQuery(e.target) != $el && $ee.hasClass("active")) {
-      $ee.removeClass("active");
-    }
-  });
+  // var $el = jQuery(".s-language-switcher .language-active");
+  // var $ee = jQuery(".s-language-switcher ul");
+  // $el.click(function (e) {
+  //   e.stopPropagation();
+  //   $ee.toggleClass("active");
+  // });
+  // jQuery(document).on("click", function (e) {
+  //   if (jQuery(e.target) != $el && $ee.hasClass("active")) {
+  //     $ee.removeClass("active");
+  //   }
+  // });
 
+	//語系選單
+		const langSwitcher = document.querySelector('.s-language-switcher');
+		const langList = langSwitcher.querySelector('ul');
+
+		// 1. 處理點擊選單本身的切換
+		langSwitcher.addEventListener('click', function(e) {
+		    langList.classList.toggle('active');
+		    // 阻止事件往上傳到 window，避免觸發下方的關閉邏輯
+		    e.stopPropagation();
+		});
+
+		// 2. 點擊螢幕任何其他地方就移除 active
+		window.addEventListener('click', function() {
+		    if (langList.classList.contains('active')) {
+		        langList.classList.remove('active');
+		    }
+		});
   // search header
   jQuery(".header-search > img").click(function (e) {
     e.stopPropagation();

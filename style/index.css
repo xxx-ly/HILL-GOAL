@@ -31,6 +31,8 @@
 .mb124{margin-bottom: 124px !important;}
 .mtb30{margin: 30px auto;}
 .mt30{margin-top: 30px;}
+
+/* 提交按鈕 */
 .sendBtn{
     background: #036AE5;
     border: 0;
@@ -43,7 +45,9 @@
     color: #fff;
 }
 .sendBtn:hover{opacity: 0.8;}
-
+@media (max-width:767px) {
+    .sendBtn{width: 100%;}
+}
 /* 遊戲開發介面 */
 .game-outstanding01{background: url(../images/img19.webp)no-repeat center center/cover;}
 .game-outstanding02{background: url(../images/img20.webp)no-repeat center center/cover;}
