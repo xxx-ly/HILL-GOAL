@@ -123,6 +123,7 @@ jQuery(document).ready(function () {
 		        langList.classList.remove('active');
 		    }
 		});
+    
   // search header
   jQuery(".header-search > img").click(function (e) {
     e.stopPropagation();
